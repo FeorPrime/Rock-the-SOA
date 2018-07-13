@@ -7,13 +7,13 @@ namespace ExternalService.Contracts
 {
     interface IExternalService
     {
-        string getSimpleData();
+        string GetSimpleData();
 
-        ComplexDataType getComplexData();
+        ComplexDataType GetComplexData();
 
-        string getSimpleData(string simpleParameter);
+        string GetSimpleDataWithParameter(string simpleParameter);
 
-        ComplexDataType getComplexData(ComplexDataType complexParameter);
+        ComplexDataType GetComplexDataWithParameter(ComplexDataType complexParameter);
     }
 
     public class ComplexDataType
